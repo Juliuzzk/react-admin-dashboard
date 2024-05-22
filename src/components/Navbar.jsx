@@ -35,6 +35,7 @@ const Navbar = () => {
 		isClicked,
 		setScreenSize,
 		screenSize,
+		currentColor,
 	} = useStateContext();
 
 	// Los useEffect son funciones que se ejecutan en todo momento, sobre todo cuando cambia el estado.
@@ -62,21 +63,21 @@ const Navbar = () => {
 				customFunc={() =>
 					setActiveMenu((prevActiveMenu) => !prevActiveMenu)
 				}
-				color="blue"
+				color={currentColor}
 				icon={<AiOutlineMenu />}
 			/>
 			<div className="flex">
 				<NavButton
 					title="Cart"
 					customFunc={() => handleClick("cart")}
-					color="blue"
+					color={currentColor}
 					icon={<FiShoppingCart />}
 				/>
 				<NavButton
 					title="Chat"
 					dotColor="#03C9D7"
 					customFunc={() => handleClick("chat")}
-					color="blue"
+					color={currentColor}
 					icon={<BsChatLeft />}
 				/>
 				<NavButton

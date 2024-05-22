@@ -16,6 +16,7 @@ import { customersData, customersGrid } from "../data/dummy";
 import { Header } from "../components";
 
 const Customers = () => {
+	// Grid options
 	const selectionsettings = { persistSelection: true };
 	const toolbarOptions = ["Delete"];
 	const editing = { allowDeleting: true, allowEditing: true };

@@ -5,9 +5,6 @@ import {
 	SparklineTooltip,
 } from "@syncfusion/ej2-react-charts";
 
-// SyncFusion posee una buena documentacion, en caso de cualquier duda,
-// lo ideal es visitar su web oficial
-
 class SparkLine extends React.PureComponent {
 	render() {
 		const { id, height, width, color, data, type, currentColor } =
